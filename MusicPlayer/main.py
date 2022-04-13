@@ -58,7 +58,7 @@ class Player(tk.Frame):
 
         self.songtrack = tk.Label(self.track, font=("times new roman", 16, "bold"),
                                   bg="black", fg="white")
-        self.songtrack['text'] = 'NANI,s PLAYER'
+        self.songtrack['text'] = 'Music Player'
         self.songtrack.config(width=30, height=1)
         self.songtrack.grid(row=1, column=0, padx=10)
 
@@ -185,7 +185,7 @@ class Player(tk.Frame):
 
 if __name__ == '__main__':
     root = tk.Tk()
-    root.geometry('600x400')
+    root.geometry('900x600')
     root.title('Music!!')
     root.iconbitmap(r'icons/app.ico')
 
@@ -197,4 +197,3 @@ if __name__ == '__main__':
 
     app = Player(master=root)
     app.mainloop()
-ś
